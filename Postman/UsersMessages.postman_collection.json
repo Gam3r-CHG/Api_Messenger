@@ -1,0 +1,645 @@
+{
+	"info": {
+		"_postman_id": "da4eaea5-03bf-4829-bc7d-a61df32e8bda",
+		"name": "UsersMessages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21572112"
+	},
+	"item": [
+		{
+			"name": "Registration",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"string\",\n  \"password\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5263/Registration/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5263",
+							"path": [
+								"Registration",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddAmin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"string\",\n  \"password\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5263/Registration/AddAdmin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5263",
+							"path": [
+								"Registration",
+								"AddAdmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"string\",\n  \"password\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5263/Registration/AddUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5263",
+							"path": [
+								"Registration",
+								"AddUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUsers",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "payload",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5263/Registration/GetUsers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5263",
+							"path": [
+								"Registration",
+								"GetUsers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCurrentUserId",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "payload",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5263/Registration/GetCurrentUserId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5263",
+							"path": [
+								"Registration",
+								"GetCurrentUserId"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserId",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "payload",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5263/Registration/GetUserId?emai=test@mail.ru",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5263",
+							"path": [
+								"Registration",
+								"GetUserId"
+							],
+							"query": [
+								{
+									"key": "emai",
+									"value": "test@mail.ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "payload",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5263/Registration/DeleteUser?emai=test@mail.ru",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5263",
+							"path": [
+								"Registration",
+								"DeleteUser"
+							],
+							"query": [
+								{
+									"key": "emai",
+									"value": "test@mail.ru"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Messages",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"string\",\n  \"password\": \"string\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5298/Messages/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5298",
+							"path": [
+								"Messages",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CurrentUserId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5298/Messages/CurrentUserId",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5298",
+							"path": [
+								"Messages",
+								"CurrentUserId"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5298/Messages/GetUserId?email=test@mail.ru",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5298",
+							"path": [
+								"Messages",
+								"GetUserId"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "test@mail.ru"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllUserMessages",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "payload",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5298/Messages/GetAllUserMessages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5298",
+							"path": [
+								"Messages",
+								"GetAllUserMessages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReceiveMessages",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "payload",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5298/Messages/ReceiveMessages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5298",
+							"path": [
+								"Messages",
+								"ReceiveMessages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessage",
+					"request": {
+						"auth": {
+							"type": "jwt",
+							"jwt": [
+								{
+									"key": "algorithm",
+									"value": "HS256",
+									"type": "string"
+								},
+								{
+									"key": "isSecretBase64Encoded",
+									"value": false,
+									"type": "boolean"
+								},
+								{
+									"key": "payload",
+									"value": "{}",
+									"type": "string"
+								},
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								},
+								{
+									"key": "headerPrefix",
+									"value": "Bearer",
+									"type": "string"
+								},
+								{
+									"key": "queryParamKey",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "header",
+									"value": "{}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5298/Messages/SendMessage?emailTo=test@mail.ru&text=text",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5298",
+							"path": [
+								"Messages",
+								"SendMessage"
+							],
+							"query": [
+								{
+									"key": "emailTo",
+									"value": "test@mail.ru"
+								},
+								{
+									"key": "text",
+									"value": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

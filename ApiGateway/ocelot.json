@@ -1,0 +1,63 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Registration/{method}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5263
+        }
+      ],
+      "UpstreamPathTemplate": "/UserRegistration/{method}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post",
+        "Delete"
+      ],
+      "SwaggerKey": "users"
+    },
+    {
+      "DownstreamPathTemplate": "/Messages/{method}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5298
+        }
+      ],
+      "UpstreamPathTemplate": "/Messages/{method}",
+      "UpstreamHttpMethod": [
+        "Get",
+        "Post"
+      ],
+      "SwaggerKey": "messages"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5293"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "users",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "Users registration API",
+          "Version": "v1",
+          "Url": "http://localhost:5263/swagger/v1/swagger.json"
+        }
+      ]
+    },{
+      "Key": "library",
+      "TransformByOcelotConfig": false,
+      "Config": [
+        {
+          "Name": "Messages API",
+          "Version": "v1",
+          "Url": "http://localhost:5298/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

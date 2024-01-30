@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=07e44a0f_002D3354_002D46a0_002Da52a_002Dcc6a2499c7d9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestValidatorLoginModel" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::98A47389-5F16-4E5A-A1F5-21CE80C81F17::net8.0::UnitTests.UnitTest1.TestValidatorLoginModel&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::98A47389-5F16-4E5A-A1F5-21CE80C81F17::net8.0::UnitTests.UnitTest1.TestUserAdd&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::98A47389-5F16-4E5A-A1F5-21CE80C81F17::net8.0::UnitTests.UnitTest1.TestUserRepository&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::98A47389-5F16-4E5A-A1F5-21CE80C81F17::net8.0::UnitTests.UnitTest1.TestMessageRepository&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
